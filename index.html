@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PizzaTime</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-panel">
+        <a href="#" class="logo"><img src="img/logo.png" alt="Pizza"></a>
+        <nav class="nav">
+                <a href="#pizzaaa" class="nav__link">Пицца</a>
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </a>
+            <a class = "nav__tel" href="tel:+79999999999">+7 (999) 999-99-99</a>
+             </nav>
+          </div>
+       </div>
+    </div>
+</div>  
+</header>   
+<section class="best-pizza section">
+    <img src="img/section-top__bg-img.png" alt="n">
+    <div class="best-pizza__img"><img src="img/section-top__bg-overlay.png" alt="n"></div>  
+    <div class="best-pizza-main best-pizza__main">
+        <h2 class="best-pizza-main__title">
+        <span class="best-pizza-main__span center">от итальянского повара</span>
+        Лучшая&nbsp пицца <br> <span class="center"> в Москвe </span>
+    </h2>
+    <a href="#" class="button best-pizza-main__btn best-pizza-main__btn_red">Выбрать</a>
+</div>
+</section>
+<div class="popup popup-menu none">
+    <div class="popup__close popup-menu__close"><img src="img/3-layers.png" alt="close"></div>
+    <a href="#pizzaaa" class="popup-menu__pizza popup-menu-style">Пицца</a>
+    <a href="#about" class="popup-menu__about popup-menu-style">О нас</a>
+    <a href="#contacts" class="popup-menu__contacts popup-menu-style">Контакты</a>  
+    <div class="popup-menu__tel">
+    <a class="popup-menu__number" href="tel:+79999999999">+7 (999) 999-99-99</a>
+    </div>
+    <div class="popup-menu__social">
+    <a href="#">
+        <img class="popup-menu__item" src="img/vk.png" alt="vk">
+     </a>
+     <a href="#">
+        <img class="popup-menu__item" src="img/facebook.png" alt="facebook">
+     </a>
+     <a href="#">
+        <img class="popup-menu__item" src="img/instagram.png" alt="instagram">
+     </a>
+    </div>
+</div>
+<main class="main menu" id = "scroll-there">
+    <div class="popup popup-order none">
+        <div class="popup__close popup-order__close"><img src="img/3-layers.png" alt="close"></div>
+        
+         <div class="popup-order__title">
+            Заполните форму
+         </div>   
+         <div class="popup-order__text">
+            Мы привезем вам горячую <br>
+            пиццу за 50 минут
+         </div> 
+         <div class="popup-order__img">
+         </div>
+         
+         <div class="popup-order__item">
+             <div class="popup-order__name">
+                <!--Салями-->
+             </div>
+             <div class="popup-order__price"></div>
+            
+        
+         </div>
+             <div class="popup-order__size"></div>
+            
+             <form action="#" class="form">
+             <input type="hidden" class="popup-order__price-input">
+             <input type="hidden" class="popup-order__size-input">
+             <input type="text" class="input input__name" placeholder="Имя"> <br>
+             <input type="text" class="input input__tel" placeholder="Телефон"> <br>
+             <input type="text" class="input input__address" placeholder="Адрес"> <br>
+             <select name="select" class = "input select">
+                <option value="s1">Оплата наличными</option>
+                <option value="s2" selected>Оплата картой</option>
+               </select> 
+               <div class="button orange">Отправить</div>
+         </form>
+        </div>
+    <div class="container">
+        <div class="menu-center">
+     <div id="pizzaaa" class="title menu__title">
+        Меню
+     </div>
+     <div class="menu__correction">
+        <div class="menu__item menu__item_active radius-left" data-filter="all">Все</div>
+        <div class="menu__item" data-filter="mushrooms">Грибные</div>
+        <div class="menu__item" data-filter="meat">Мясные</div>
+        <div class="menu__item radius-right" data-filter="cheese">Сырные</div>
+     </div>
+     <div class="menu-products">
+
+
+  
+     <div class="menu-product menu__product" data-product="meat">
+          <div class="menu-product__img">
+                <img id="hi" src="img/1.png" alt="h">
+          </div>
+          <div class="menu-product__title">
+            Салями
+          </div>
+          <div class="menu-product__disc">
+            Салями, картофель и морковь, огурцы
+            маринованные, моцарелла, цыпленок,
+            ветчина и французский соус 
+          </div>
+          <div class="menu-product__buttons">
+            <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="850р">
+                35см
+              </div>
+              <div class="menu-product__btn" data-mediumprice="700р">
+                30см
+            </div>
+            <div class="menu-product__btn radius-right" data-lowprice="600р">
+                25см
+            </div>
+          </div>
+         <div class="menu-product__order">
+                <div class="menu-product__price">
+                    850 ₽
+                </div>
+                 <div class="menu-product-order__button button" data-title="Салями" 
+                 data-price="850" data-size="35 см" data-src="img/1.png">
+                    Заказать
+                 </div>
+         </div>
+        </div>
+
+
+        <div class="menu-product menu__product" data-product="meat">
+            <div class="menu-product__img">
+                  <img src="img/2.png" alt="h">
+            </div>
+            <div class="menu-product__title">
+              Хит
+            </div>
+            <div class="menu-product__disc">
+              Картофель и морковь, огурцы
+              маринованные, моцарелла, цыпленок,
+              ветчина и французский соус 
+            </div>
+            <div class="menu-product__buttons">
+              <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="950р">
+                  35см
+                </div>
+                <div class="menu-product__btn" data-mediumprice="750р">
+                  30см
+              </div>
+              <div class="menu-product__btn radius-right" data-lowprice="650р">
+                  25см
+              </div>
+            </div>
+           <div class="menu-product__order">
+                  <div class="menu-product__price">
+                      950 ₽
+                  </div>
+                   <div class="menu-product-order__button button" data-title="Хит" 
+                   data-price="950" data-size="35 см" data-src="img/2.png">
+                      Заказать
+                   </div>
+           </div>
+          </div>
+
+        
+          <div class="menu-product menu__product" data-product="mushrooms">
+            <div class="menu-product__img">
+                  <img src="img/3.png" alt="h">
+            </div>
+            <div class="menu-product__title">
+              Ветчина-грибы
+            </div>
+            <div class="menu-product__disc">
+              Салями, картофель и морковь, огурцы
+маринованные, моцарелла, цыпленок,
+ветчина и французский соус 
+            </div>
+            <div class="menu-product__buttons">
+              <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="880р">
+                  35см
+                </div>
+                <div class="menu-product__btn" data-mediumprice="700р">
+                  30см
+              </div>
+              <div class="menu-product__btn radius-right" data-lowprice="600р">
+                  25см  
+              </div>
+            </div>
+           <div class="menu-product__order">
+                  <div class="menu-product__price">
+                      880 ₽
+                  </div>
+                   <div class="menu-product-order__button button" data-title="Ветчина-грибы" 
+                   data-price="880" data-size="35 см" data-src="img/3.png">
+                      Заказать
+                   </div>
+           </div>
+          </div>
+   
+
+
+          <div class="menu-product menu__border-right menu__product" data-product="meat">
+            <div class="menu-product__img">
+                  <img src="img/4.png" alt="h">
+            </div>
+            <div class="menu-product__title">
+              Карбонара
+            </div>
+            <div class="menu-product__disc">
+              Салями, курица, моцарелла, говядина,
+ветчина и французский соус 
+            </div>
+            <div class="menu-product__buttons">
+              <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="1250р">
+                  35см
+                </div>
+                <div class="menu-product__btn" data-mediumprice="990р">
+                  30см
+              </div>
+              <div class="menu-product__btn radius-right" data-lowprice="800р">
+                  25см  
+              </div>
+            </div>
+           <div class="menu-product__order">
+                  <div class="menu-product__price">
+                      1250 ₽
+                  </div>
+                   <div class="menu-product-order__button button" data-title="Карбонара" 
+                   data-price="1250" data-size="35 см" data-src="img/4.png">
+                      Заказать
+                   </div>
+           </div>
+          </div>
+
+
+          <div class="menu-product menu__border-right menu__product" data-product="cheese">
+              <div class="menu-product__img">
+                    <img src="img/5.png" alt="h">
+              </div>
+              <div class="menu-product__title">
+                Фирменная
+              </div>
+              <div class="menu-product__disc">
+                Томатно-сливочный соус, бекон, моцарелла 
+              </div>
+              <div class="menu-product__buttons">
+                <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="890р">
+                    35см
+                  </div>
+                  <div class="menu-product__btn" data-mediumprice="720р">
+                    30см
+                </div>
+                <div class="menu-product__btn radius-right" data-lowprice="620р">
+                    25см  
+                </div>
+              </div>
+             <div class="menu-product__order">
+                    <div class="menu-product__price">
+                        890 ₽
+                    </div>
+                     <div class="menu-product-order__button button" data-title="Фирменная" 
+                     data-price="890" data-size="35 см" data-src="img/5.png">
+                        Заказать
+                     </div>
+             </div>
+            </div>
+
+
+            <div class="menu-product menu__product" data-product="mushrooms">
+              <div class="menu-product__img">
+                    <img src="img/6.png" alt="h">
+              </div>
+              <div class="menu-product__title">
+                Ассорти
+              </div>
+              <div class="menu-product__disc">
+                Картофель моцарелла, цыпленок, грибы,
+ветчина и французский соус  
+              </div>
+              <div class="menu-product__buttons">
+                <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="850р">
+                    35см
+                  </div>
+                  <div class="menu-product__btn" data-mediumprice="700р">
+                    30см
+                </div>
+                <div class="menu-product__btn radius-right" data-lowprice="600р">
+                    25см  
+                </div>
+              </div>
+             <div class="menu-product__order">
+                    <div class="menu-product__price">
+                        850 ₽
+                    </div>
+                     <div class="menu-product-order__button button" data-title="Ассорти" 
+                     data-price="850" data-size="35 см" data-src="img/6.png">
+                        Заказать
+                     </div>
+             </div>
+            </div>
+   
+
+            <div class="menu-product menu__product" data-product="meat">
+                <div class="menu-product__img">
+                      <img src="img/7.png" alt="h">
+                </div>
+                <div class="menu-product__title">
+                  Л-01
+                </div>
+                <div class="menu-product__disc">
+                  Томаты, моцарелла, цыпленок,
+ветчина и французский соус, секректный
+ингредиент  
+                </div>
+                <div class="menu-product__buttons">
+                  <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="920р">
+                      35см
+                    </div>
+                    <div class="menu-product__btn" data-mediumprice="760р">
+                      30см
+                  </div>
+                  <div class="menu-product__btn radius-right" data-lowprice="670р">
+                      25см  
+                  </div>
+                </div>
+               <div class="menu-product__order">
+                      <div class="menu-product__price">
+                          920 ₽
+                      </div>
+                       <div class="menu-product-order__button button" data-title="Л-01" 
+                       data-price="920" data-size="35 см" data-src="img/7.png">
+                          Заказать
+                       </div>
+               </div>
+              </div>
+
+              <div class="menu-product menu__product" data-product="cheese">
+                  <div class="menu-product__img">
+                        <img src="img/8.png" alt="h">
+                  </div>
+                  <div class="menu-product__title">
+                    Три сыра
+                  </div>
+                  <div class="menu-product__disc">
+                    Чеддер, камамбер, эдам
+                  </div>
+                  <div class="menu-product__buttons">
+                    <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="990р">
+                        35см
+                      </div>
+                      <div class="menu-product__btn" data-mediumprice="790р">
+                        30см
+                    </div>
+                    <div class="menu-product__btn radius-right" data-lowprice="690р">
+                        25см  
+                    </div>
+                  </div>
+                 <div class="menu-product__order">
+                        <div class="menu-product__price">
+                            990 ₽
+                        </div>
+                         <div class="menu-product-order__button button" data-title="Три сыра" 
+                         data-price="990" data-size="35 см" data-src="img/8.png">
+                            Заказать
+                         </div>
+                 </div>
+                </div>
+
+                <div class="menu-product menu__product" data-product="meat">
+                  <div class="menu-product__img">
+                        <img src="img/9.png" alt="h">
+                  </div>
+                  <h3 class="menu-product__title">
+                    Мясная
+                  </h3>
+                  <p class="menu-product__disc">
+                    Курица, говядина, сливочный соус, салями,
+огурцы маринованные, томаты, грибы,
+бекон 
+                  </p>
+                  <div class="menu-product__buttons">
+                    <div class="menu-product__btn radius-left menu-product__btn_active" data-bigprice="950р">
+                        35см
+                      </div>
+                      <div class="menu-product__btn" data-mediumprice="800р">
+                        30см
+                    </div>
+                    <div class="menu-product__btn radius-right" data-lowprice="700р">
+                        25см  
+                    </div>
+                  </div>
+                 <div class="menu-product__order">
+                        <div class="menu-product__price">
+                            950 ₽
+                        </div>
+                         <div class="menu-product-order__button button" data-title="Мясная" 
+                         data-price="950" data-size="35 см" data-src="img/9.png">
+                            Заказать
+                         </div>
+                 </div>
+            </div>
+    <!----  </div>-->
+
+
+     </div>
+    </div>
+</div>
+</main>
+<section class="section">
+    <div id="about" class="about">
+        <div class="about__img"><img src="img/bg.jpg.png" alt="j"></div> 
+        <section class="about-main about__main">
+            <h2 class="about__title">
+                О нас
+            </h2>
+            <p class="about__disc">Доставим вам горячую пиццу менее чем за час или пицца бесплатно. <br>
+                Мы готовим пиццу только из свежих продуктов. Каждый день мы покупаем <br> свежие овощи, грибы и мясо.</p>
+        </section>
+    </div>
+</section>
+
+<section id="contacts" class="section contacts">
+      <h2 class="title contacts__title">
+        Контакты
+      </h2>
+      <div class="contacts-address">
+          <div class="contacts__map">
+            <script type="text/javascript" charset="utf-8" async 
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae6fe45883bad439bbd9d61eae4022b43db9e9c03ec6b08262a0c3c5c5aae8aee&amp;width=555&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+          <section class="contacts__disc disc">
+           <h4 class="disc__title disc-title">
+            Адрес
+           </h4>
+           <p class="disc__main disc-main">г. Москва, Преображенская площадь, 8</p>
+           <h4 class="disc__tel disc-title">
+            Телефон
+           </h4>
+           <p class="disc-main">
+            <a class="disc__tel-number" href="tel:+79999999999">+7(999) 999-99-99</a>
+           </p>
+           <h4 class="disc__social disc-title">
+            Социальные сети
+           </h4>
+           <p class="disc__icons">
+               <a href="#">
+               <img class="disc__item" src="img/vk.png" alt="vk">
+            </a>
+            <a href="#">
+               <img class="disc__item" src="img/facebook.png" alt="facebook">
+            </a>
+            <a href="#">
+               <img class="disc__item" src="img/instagram.png" alt="instagram">
+            </a>
+           </p>
+          </section>
+      </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__copyright">
+        ⓒВсе права защищены
+    </div>
+</footer>
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
